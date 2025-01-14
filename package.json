@@ -4,7 +4,9 @@
   "description": "daily-dose-project",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest",
+    "mocha-test": "mocha test/**/*.test.js",
     "backend-test": "nyc --nycrc-path .nycrc-backend mocha"
   },
   "keywords": [],
