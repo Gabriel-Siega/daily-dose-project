@@ -5,7 +5,7 @@ services:
     build:  # Build configuration
       context: .  # Build context
       dockerfile: Dockerfile  # Dockerfile name
-    image: Gabspc/rms-docker-img:latest  # Image name
+    image: gabriels606/rms-docker-img:latest  # Image name for Docker Hub
     container_name: rms-docker-container  # Container name
     ports:  # Port mappings
       - "8000:5050"  # Host port:Container port
