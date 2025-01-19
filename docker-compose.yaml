@@ -1,0 +1,11 @@
+version: '3.8'  # Specify the version of Docker Compose
+
+services:
+  build-rms:  # Service name
+    build:  # Build configuration
+      context: .  # Build context
+      dockerfile: Dockerfile  # Dockerfile name
+    image: Gabspc/rms-docker-img:latest  # Image name
+    container_name: rms-docker-container  # Container name
+    ports:  # Port mappings
+      - "8000:5050"  # Host port:Container port
